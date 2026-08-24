@@ -12,8 +12,5 @@ class Solution:
             if c > 0:
                 p += ")"
                 dfs(n, c-1, p)
-                p = p[:len(p)-1]
         dfs(n,0,"")
         return res
-
-            
