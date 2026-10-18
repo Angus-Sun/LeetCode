@@ -4,10 +4,9 @@ class Solution:
         while True:
             slow = self.sumOfSquares(slow)
             fast = self.sumOfSquares(self.sumOfSquares(fast))
-            if fast == 1:
-                return True
             if slow == fast:
-                return False
+                break
+        return fast == 1
     def sumOfSquares(self,n):
         res = 0
         while n:
